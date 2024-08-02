@@ -14,10 +14,21 @@ model HelloWorld {
     updatedAt DateTime @updatedAt
 }
 
-model Capstone{
-    id        Int      @id @default(autoincrement())
-    question  String
-    answer    String    
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+generator client {
+  provider = "prisma-client-js"
 }
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+}
+
+model Capstone {
+  id        Int      @id @default(autoincrement())
+  question  String
+  answer    String    
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
