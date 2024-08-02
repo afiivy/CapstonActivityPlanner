@@ -5,7 +5,7 @@ import About from "./About";
 import Body from "@/components/Body";
 import Layout from '../components/Layout'
 import Contact from "./Contact";
-import LogIn from "./LogIn";
+
 
 // import { 
 //   createBrowserRouter, RouterProvider } from 'react-router-dom';
