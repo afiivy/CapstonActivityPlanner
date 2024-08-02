@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .logo {
+    flex-shrink: 0;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .navItem a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navItem a:hover {
+    text-decoration: underline;
+  }
+  
+  .login {
+    flex-shrink: 0;
+  }
+  
+  .login a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login a:hover {
+    text-decoration: underline;
+  }
