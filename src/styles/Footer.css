@@ -1,0 +1,26 @@
+.footer{
+    padding-left: 50px;
+}
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: gray;
+    margin: 0 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  .text {
+    color: blue;
+    letter-spacing: px;
+  }
+
+  .about, .contact{
+    text-decoration: none;
+
+  }
