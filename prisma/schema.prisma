@@ -23,3 +23,11 @@ model User {
   email    String @unique
   password String
 }
+
+model Capstone {
+  id        Int      @id @default(autoincrement())
+  question  String
+  answer    String    
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
