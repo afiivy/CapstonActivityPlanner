@@ -2,6 +2,32 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
+const activityData = [
+{
+  question:"",
+  answer:""
+  }, 
+{
+  question:"",
+  answer:""
+  },  
+  
+{
+  question:"",
+  answer:""
+  }, 
+  
+{
+  question:"",
+  answer:""
+  }, 
+  
+{
+  question:"",
+  answer:""
+  }, 
+]
+
 async function main() {
   console.log(`Update me to seed data`);
 }
