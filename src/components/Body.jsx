@@ -1,9 +1,9 @@
 import React from "react";
-// import './Body.css';
+import Image from "next/image";
 export default function Body() {
     return (
 <> 
-<img src="https://github.com/afiivy/images/blob/main/Beach.jpg?raw=true" class="img-thumbnail" alt="..." style={{width:"100%"}}></img>
+{/* <Image src="https://github.com/afiivy/images/blob/main/Beach.jpg?raw=true" className="img-thumbnail" alt="..." style={{width:"100%"}}></Image> */}
 
 </>
 
