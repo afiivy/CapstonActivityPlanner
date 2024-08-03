@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-import About from "./About";
+import About from "./about";
 import Body from "@/components/Body";
 import Layout from '../components/Layout'
-import Contact from "./Contact";
+import Contact from "./contact";
 
 
 // import { 
