@@ -1,6 +1,6 @@
 import React ,{useState, useEffect}from "react";
+import Link from "next/link";
 
-import Image from "next/image";
 export default function Questions() {
     const [q1answer,setq1answer]=useState(null)
     const [q2answer,setq2answer]=useState(null)
@@ -10,11 +10,13 @@ export default function Questions() {
         console.log("q2answer",q2answer)
     },[q1answer, q2answer])
 
+ 
 
-const questionArray = [
+
+    const questionArray = [
     {
       id:1,
-      question:"What is the general theme for the outing",
+      question:"What is the general theme for the outing?",
       choices:[
         {
           id: 1,
@@ -99,7 +101,7 @@ const questionArray = [
 
                                 return (
                                 <div key={index}>
-                                    <button className="btn btn-primary" onClick={()=>choiceSeleted(question.id,choice.text)}>
+                                    <button className="" onClick={()=>choiceSeleted(question.id,choice.text)}>
                                         {choice.text}
                                     </button>
                                 </div>
@@ -117,7 +119,10 @@ const questionArray = [
             :
             <div> There are no questions</div>
         }
+            
     </div>
+
+    
             
   )
 }

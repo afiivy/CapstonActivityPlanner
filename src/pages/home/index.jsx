@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function about() {
+export default function index() {
   return (
     <div>
       
     </div>
   )
 }
+
