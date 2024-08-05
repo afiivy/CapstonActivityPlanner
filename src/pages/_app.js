@@ -1,13 +1,17 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from "react";
 import '../styles/Footer.css';
+import '../styles/Header.module.css'
 import '../styles/Body.css';
 import '../styles/About.css';
-import Header from '../components/Header';
+import '../styles/Contact.css';
+import '../styles/Thingstodo.css';
 export default function App({ Component, pageProps }) {
-  return (
-    <>
-      <Header />
-      <Component {...pageProps} />
-    </>
-  );
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }
+  }, []);
+
+  return <Component {...pageProps} />;
 }

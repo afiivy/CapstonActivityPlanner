@@ -1,42 +1,18 @@
 import React from "react";
-import Head from "next/head";
-import Footer from "@/components/Footer";
-import About from "./about";
+import Header from '../components/Header';
 import Body from "@/components/Body";
-import Layout from '../components/Layout'
-import Contact from "./contact";
-
-
-// import { 
-//   createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Layout/>,
-  //     children:[
-  //       {path: "/", element:<Home/>},
-  //       {path: "login", element: <LogIn/>},
-  //       {path:"about", element: <About/>},
-  //       {path:"contact", element: <Contact/>},
-  //     ]
-  //   },
-    
-  // ]);
-
-
-
+import Footer from "@/components/Footer";
 
 
   export default function Home() {
   return (
     <>
-    
-      <h1>Hello World</h1>
-      <Body/>
-      {/* <About/> */}
-      {/* <RouterProvider router={router} /> */}
+    <div>
+    <Header/>
+      <Body/> 
      <Footer/>
+    </div>
+      
     </>
   );
 }
