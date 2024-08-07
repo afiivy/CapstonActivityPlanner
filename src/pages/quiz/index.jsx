@@ -1,7 +1,9 @@
 import React ,{useState, useEffect}from "react";
 import Link from "next/link";
 
+
 export default function Questions() {
+
     const [q1answer,setq1answer]=useState(null)
     const [q2answer,setq2answer]=useState(null)
 
