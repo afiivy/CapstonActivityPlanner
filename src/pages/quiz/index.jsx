@@ -49,7 +49,7 @@ export default function Questions() {
 
   function renderChoiceMessage(q1answer, q2answer) {
     if (q1answer === "Competitive" && q2answer === "Under $20") {
-      return "The outing is going to be a budget-friendly competition!";
+    return "The outing is going to be a budget-friendly competition!";
     } else if (q1answer === "Cozy") {
       return "The outing is going to be a relaxing, cozy time.";
     } else if (q1answer === "Crafty") {
@@ -69,7 +69,7 @@ export default function Questions() {
             <div key={index}>
               <h3>{question.question}</h3>
 
-              {question.choices && question.choices.length > 0 ? (
+            {question.choices && question.choices.length > 0 ? (
                 question.choices.map((choice, index) => {
                   return (
                     <div key={index}>
@@ -78,7 +78,7 @@ export default function Questions() {
                         onClick={() => choiceSelected(question.id, choice.text)}
                       >
                         {choice.text}
-                      </button>
+                    </button>
                     </div>
                   );
                 })
@@ -98,5 +98,4 @@ export default function Questions() {
     </div>
   );
 }
-
 
