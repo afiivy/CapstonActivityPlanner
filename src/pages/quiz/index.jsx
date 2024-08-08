@@ -113,7 +113,7 @@ export default function Questions() {
             <div key={index}>
               <h3>{question.question}</h3>
 
-              {question.choices && question.choices.length > 0 ? (
+            {question.choices && question.choices.length > 0 ? (
                 question.choices.map((choice, index) => {
                   return (
                     <div key={index}>
@@ -122,7 +122,7 @@ export default function Questions() {
                         onClick={() => choiceSelected(question.id, choice.text)}
                       >
                         {choice.text}
-                      </button>
+                    </button>
                     </div>
                   );
                 })
@@ -142,5 +142,4 @@ export default function Questions() {
     </div>
   );
 }
-
 
