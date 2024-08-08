@@ -3,14 +3,11 @@ import Link from "next/link";
 
 
 export default function Questions() {
-<<<<<<< Updated upstream
+
 
     const [q1answer,setq1answer]=useState(null)
     const [q2answer,setq2answer]=useState(null)
-=======
-  const [q1answer, setQ1Answer] = useState(null);
-  const [q2answer, setQ2Answer] = useState(null);
->>>>>>> Stashed changes
+
 
   useEffect(() => {
     console.log("q1answer", q1answer);
