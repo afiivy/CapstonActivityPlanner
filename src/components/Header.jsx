@@ -11,6 +11,7 @@ const Header = () => {
          <Image src="/public/logo-datenight.jpg" alt="Logo" width={50} height={50} />
         </Link> 
       </div>*/}
+      
       <nav>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
