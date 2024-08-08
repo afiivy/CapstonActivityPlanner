@@ -41,9 +41,9 @@ export default function Questions() {
     console.log("questionID", questionID);
     console.log("Am clicked", choice);
     if (questionID === 1) {
-      setQ1Answer(choice);
+      setq1answer(choice);
     } else if (questionID === 2) {
-      setQ2Answer(choice);
+      setq2answer(choice);
     }
   }
 
