@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-
+import Header from '@/components/Header';
+import styles from '../styles/Quiz.css';
 
 export default function Questions() {
 
@@ -106,11 +107,13 @@ export default function Questions() {
   }
 
   return (
-    <div>
+      <div className="quiz-container">
+          <Header/>
+
       {questionArray && questionArray.length > 0 ? (
         questionArray.map((question, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="question">
               <h3>{question.question}</h3>
 
             {question.choices && question.choices.length > 0 ? (
@@ -118,7 +121,7 @@ export default function Questions() {
                   return (
                     <div key={index}>
                       <button
-                        className=""
+                        className="quiz-button"
                         onClick={() => choiceSelected(question.id, choice.text)}
                       >
                         {choice.text}
@@ -137,7 +140,7 @@ export default function Questions() {
       )}
 
       <div>
-        {q1answer && q2answer && <div>{renderChoiceMessage(q1answer, q2answer)}</div>}
+        {q1answer && q2answer && <div className="result">{renderChoiceMessage(q1answer, q2answer)}</div>}
       </div>
     </div>
   );
