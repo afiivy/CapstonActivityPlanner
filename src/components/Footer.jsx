@@ -3,6 +3,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
+
   <footer className='footer'>
     
   <link
@@ -24,10 +25,21 @@ export default function Footer() {
     </nav>
 
     <div className="container"> 
-        <div className="line"></div>
+      <div className="line"></div>
         <span className="text">Follow Us</span>
-        <div className="line"></div>
-    </div>  
-    </footer>
+      <div className="line"></div>
+    </div>
+
+    <div className="social-icons">
+      <a href="https://facebook.com" target="_blank"><i className="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i className="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+
+    
   )
 }
+

@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Contact() {
+export default function index() {
   return (
     <div>
       
     </div>
   )
 }
+

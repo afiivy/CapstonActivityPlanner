@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #594471;
     padding: 1rem;
   }
   
@@ -24,11 +24,12 @@
   }
   
   .navItem a {
-    color: white;
+    color: rgb(253, 253, 255);
     text-decoration: none;
   }
   
   .navItem a:hover {
+    color: rgb(126, 126, 255);
     text-decoration: underline;
   }
   
@@ -42,5 +43,6 @@
   }
   
   .login a:hover {
+    color: rgb(126, 126, 255);
     text-decoration: underline;
   }
