@@ -24,7 +24,15 @@
 }
 
 .text {
-    color: blue;
+    color: #594471;
+  }
+
+  .nav-item, .nav-link active {
+    color: #594471;
+  }
+  .nav-item a:hover {
+    color: rgb(74, 74, 178);
+    text-decoration: underline;
   }
 /* 
 .nav-link{
@@ -42,14 +50,14 @@
 }
 
 .social-icons a {
-  color: blue;
+  color: #594471;
   font-size: 24px;
   transition: color 0.3s;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #0070f3;
+  color: rgb(74, 74, 178);
 }
 
 
