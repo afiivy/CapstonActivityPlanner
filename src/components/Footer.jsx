@@ -11,12 +11,12 @@ export default function Footer() {
   />
 
     <nav>
-    <ul class="nav justify-content-center">
+    <ul className="nav justify-content-center">
       <li className="nav-item">
-        <a class="nav-link active" aria-current="page" href="about">About</a>
+        <a className="nav-link active" aria-current="page" href="about">About</a>
       </li>
       <li className="nav-item">
-        <a class="nav-link" href="contact">Contact Us</a>
+        <a className="nav-link" href="contact">Contact Us</a>
       </li>
       {/* <li class="nav-item">
         <a class="nav-link" href="follow">Follow Us</a>
@@ -30,11 +30,11 @@ export default function Footer() {
       <div className="line"></div>
     </div>
 
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <div className="social-icons">
+      <a href="https://facebook.com" target="_blank"><i className="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i className="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
 
