@@ -12,15 +12,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    position: relative;
   }
 
-  .text {
-    color: blue;
-    letter-spacing: px;
+.container::before,.container::after{
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid gray;
+  margin: 0 10px;
+}
+
+.text {
+    color: #594471;
   }
 
-  .about, .contact{
-    text-decoration: none;
-
+  .nav-item, .nav-link active {
+    color: #594471;
   }
+  .nav-item a:hover {
+    color: rgb(74, 74, 178);
+    text-decoration: underline;
+  }
+/* 
+.nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}   */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: #594471;
+  font-size: 24px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: rgb(74, 74, 178);
+}
