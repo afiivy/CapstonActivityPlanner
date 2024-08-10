@@ -1,0 +1,23 @@
+.containera {
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form div {
+    margin-bottom: 15px;
+  }
+  
+  .login {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: blueviolet;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }

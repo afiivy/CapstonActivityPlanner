@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from '@/components/Header';
-import styles from '../../styles/Quiz.module.css';
-//<div className={styles.quizContainer}> example of whats needed for styling
+import { useAuth } from "../api/nextauth";
+//<div className={quizContainer}> example of whats needed for styling
 export default function Questions() {
-
+  
 
     const [q1answer,setq1answer]=useState(null)
     const [q2answer,setq2answer]=useState(null)
+    const [latitude, setLatitude] = useState('');
+    const [longitude, setLongitude] = useState('');
 
 
   useEffect(() => {
@@ -50,6 +52,8 @@ export default function Questions() {
 
   function renderChoiceMessage(q1answer, q2answer) {
     if (q1answer === "Competitive" && q2answer === "Under $20") {
+      setLatitude('35.4746368') 
+      setLongitude('-97.5142912')
       return "Enjoy a Board Game Night, local breweries and cafes such as Anthem Brewing Company offer a variety of board games available";
     } 
     else if (q1answer === "Competitive" && q2answer === "$20-$40") {
@@ -108,18 +112,18 @@ export default function Questions() {
 
 
   return (
-    <div className={styles.pageContainer}>
+    <div className={"pageContainer"}>
       <Header/>
-      <div className={styles.quizContainer}>
+      <div className={"quizContainer"}>
         {questionArray && questionArray.length > 0 ? (
           questionArray.map((question, index) => (
-            <div key={index} className={styles.question}>
-              <h3 className={styles.questionText}>{question.question}</h3>
+            <div key={index} className={"question"}>
+              <h3 className={"questionText"}>{question.question}</h3>
               {question.choices && question.choices.length > 0 ? (
                 question.choices.map((choice, index) => (
                   <div key={index}>
                     <button
-                      className={`${styles.quizSelect} ${styles.btn}`}
+                      className={'quizSelect btn'}
                       onClick={() => choiceSelected(question.id, choice.text)}
                     >
                       {choice.text}
@@ -138,27 +142,31 @@ export default function Questions() {
           {q1answer && q2answer && <div className="result">{renderChoiceMessage(q1answer, q2answer)}</div>}
         </div>
       </div>
+      <div> 
+          {/* passing data into string you will `${variableName}` */}
+        <iframe src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12996.793266648137!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b210588c5ad691%3A0xc987a22ebd8ed635!2sOklahoma%20Contemporary%20Arts%20Center!5e0!3m2!1sen!2sus!4v1723306783334!5m2!1sen!2sus`} width="600" height="450" style={{border:0}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
   );
 }
 
 
 //   return (
-//       <div className={styles.quizContainer}>
+//       <div className={quizContainer}>
 //           <Header/>
 
 //       {questionArray && questionArray.length > 0 ? (
 //         questionArray.map((question, index) => {
 //           return (
-//             <div key={index} className={styles.question}>
-//               <h3 className={styles.questionText}>{question.question}</h3>
+//             <div key={index} className={question}>
+//               <h3 className={questionText}>{question.question}</h3>
 
 //             {question.choices && question.choices.length > 0 ? (
 //                 question.choices.map((choice, index) => {
 //                   return (
 //                     <div key={index}>
 //                       <button
-//                         className={`${styles.quizSelect} ${styles.btn}`}
+//                         className={`${quizSelect} ${btn}`}
 //                         onClick={() => choiceSelected(question.id, choice.text)}
 //                       >
 //                         {choice.text}
@@ -182,4 +190,5 @@ export default function Questions() {
 //     </div>
 //   );
 // }
+
 
