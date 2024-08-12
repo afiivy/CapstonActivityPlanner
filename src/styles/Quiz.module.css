@@ -32,6 +32,10 @@
     background-color: deepskyblue;
 }
 
+.btn:active {
+    background-color: rgb(153, 108, 196);
+}
+
 .result {
     background-color: rgb(244, 246, 249);
 }
