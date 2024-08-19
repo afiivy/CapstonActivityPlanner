@@ -1,0 +1,66 @@
+/* Basic styling for the carousel */
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Caption styling */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  /* Control buttons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  /* Dots indicators */
+  .carousel-indicators [data-bs-target] {
+    background-color: #000;
+    border: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+  }
+  
