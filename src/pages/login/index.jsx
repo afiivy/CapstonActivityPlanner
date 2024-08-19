@@ -1,29 +1,40 @@
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import Link from 'next/link';
+
+
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  
+
+  
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const result = await signIn('credentials', {
-      redirect: false,
-      email,
-      password,
-    });
 
-    if (result.error) {
-      setError(result.error);
-    } else {
-      window.location.href = '/';
-    }
+
+//to do auth later
+    // const result = await signIn('credentials', {
+    //   redirect: false,
+    //   email,
+    //   password,
+    // });
+
+    // if (result.error) {
+    //   setError(result.error);
+    // } else {
+    //   window.location.href = '/';
+    // }
   };
 
   return (
-    <div>
+    <div className='containera'>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -47,8 +58,10 @@ export default function Login() {
           />
         </div>
         {error && <p>{error}</p>}
-        <button type="submit">Login</button>
-      </form>
+        <Link className="btn btn-primary login" href="/quiz">Login</Link>      
+        </form>
+       
+       
     </div>
   );
 }
