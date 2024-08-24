@@ -1,13 +1,3 @@
-/* .footer{
-    padding-left: 50px;
-    margin-top: 20px;
-} */
-/* .line {
-    flex: 1;
-    height: 1px;
-    background-color: gray;
-    margin: 0 10px;
-  } */
 
 .container {
     display: flex;
@@ -34,13 +24,6 @@
     color: rgb(74, 74, 178);
     text-decoration: underline;
   }
-/* 
-.nav-link{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}   */
 
 .social-icons {
   display: flex;

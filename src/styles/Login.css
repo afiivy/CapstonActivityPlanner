@@ -1,6 +1,6 @@
 .containera {
     display: flex;
-    background-color: aquamarine;
+    background-color: #cfbde4;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10,14 +10,23 @@
 form div {
     margin-bottom: 15px;
   }
+
+.login-btn{
   
-  .login {
+  
+}  
+
+/* .d-grid gap-2 col-12 mx-auto{
+  size: 10px;
+}  */
+  
+/* .login {
     width: 100%;
     padding: 10px;
     cursor: pointer;
-    background-color: blueviolet;
-  }
-  
-  button:hover {
-    background-color: #005bb5;
-  }
+  } */
+/*   
+button:hover {
+    background-color: #7c4f79;
+  } */
+

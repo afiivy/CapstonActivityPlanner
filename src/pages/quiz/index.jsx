@@ -10,26 +10,25 @@ export default function Questions() {
   const [mapUrl, setmapUrl] = useState('');
 
 
-
   const questionArray = [
     {
       id: 1,
       question: "What is the general theme for the outing?",
       choices: [
-        { id: 1, text: "Competitive" },
-        { id: 2, text: "Cozy" },
-        { id: 3, text: "Crafty" },
-        { id: 4, text: "Crazy" },
+        { id: 1, text: "Competitive", imageUrl:"https://github.com/afiivy/images/blob/main/competitive.jpg?raw=true"},
+        { id: 2, text: "Cozy", imageUrl:"https://github.com/afiivy/images/blob/main/cozy.jpg?raw=true"},
+        { id: 3, text: "Crafty", imageUrl:"https://github.com/afiivy/images/blob/main/crafty.jpg?raw=true"},
+        { id: 4, text: "Crazy", imageUrl:"https://github.com/afiivy/images/blob/main/crazy.jpg?raw=true"},
       ],
     },
     {
       id: 2,
       question: "What's your budget?",
       choices: [
-        { id: 1, text: "Under $20" },
-        { id: 2, text: "$20-$40" },
-        { id: 3, text: "$40-$60" },
-        { id: 4, text: "$60 and above" },
+        { id: 1, text: "Under $20", imageUrl:"https://github.com/afiivy/images/blob/main/under-20.jpg?raw=true" },
+        { id: 2, text: "$20-$40",imageUrl:"https://github.com/afiivy/images/blob/main/20-40.jpg?raw=true" },
+        { id: 3, text: "$40-$60", imageUrl:"https://github.com/afiivy/images/blob/main/40-60.jpg?raw=true" },
+        { id: 4, text: "$60 and above", imageUrl:"https://github.com/afiivy/images/blob/main/60-andover.jpg?raw=true" },
       ],
     },
   ];
@@ -51,7 +50,6 @@ export default function Questions() {
     let returnStatement = ''; 
     if (q1answer === "Competitive" && q2answer === "Under $20") {
       returnStatement = "Enjoy a Board Game Night, local breweries and cafes such as Anthem Brewing Company offer a variety of board games available";
-      // newMapUrl = '35.460873,-97.5142912';
     } 
     else if (q1answer === "Competitive" && q2answer === "$20-$40") {
       returnStatement = "Go Bowling,  Ready for competition? Then Dust Bowl Lounge is the spot that will put your bowling skills to the test. This funky and retro bowling alley also has a full bar, so you can enjoy a drink while attempting to bowl your way to victory.";
@@ -114,8 +112,8 @@ export default function Questions() {
       icon: "success"
     });
   }
+  
   function displayMap(q2answer){
-    
       let newMapUrl = '';
       //competitive options
       if (q1answer === "Competitive" && q2answer === "Under $20") {
@@ -159,7 +157,6 @@ export default function Questions() {
         newMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8045550684324!2d-97.5322624241825!3d35.48050357265275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b20518d619eb4f%3A0x5e62466eb0aa637!2sCheyenne%20Sky%20Studio!5e1!3m2!1sen!2sus!4v1723903269877!5m2!1sen!2sus" 
       }
 
-
       //crazy options
       else if (q1answer === "Crazy" && q2answer === "Under $20") {
         newMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0417448224885!2d-97.54687552418272!3d35.47469527265462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2d0d83984af83%3A0xe4ea2b45a260ce2c!2sArbuckle%20Mountains!5e1!3m2!1sen!2sus!4v1723902261408!5m2!1sen!2sus" 
@@ -176,67 +173,73 @@ export default function Questions() {
     
       setmapUrl(newMapUrl);
 
-
-
   }
 
-return (
-  <div className={"pageContainer"}>
-    <Header />
-    <div className={"quizContainer row" }>
-      <div className="col-6">
-      {questionArray && questionArray.length > 0 ? (
-        questionArray.map((question, index) => (
-          <div key={index} className={"question"}>
-            <h3 className={"questionText"}>{question.question}</h3>
-            {question.choices && question.choices.length > 0 ? (
-              question.choices.map((choice, index) => (
-                <div key={index}>
-                  <button
-                    className={'quizSelect btn'}
-                    onClick={() => choiceSelected(question.id, choice.text)}
-                  >
-                    {choice.text}
-                  </button>
+  return (
+    <div className={"pageContainer"}>
+      <Header />
+      <div className={"quizContainer row"}>
+        <div className="col-6">
+          {questionArray && questionArray.length > 0 ? (
+            questionArray.map((question, index) => (
+              <div key={index} className={"question"}>
+                <h3 className={"questionText"}>{question.question}</h3>
+                <div className="choices-container" 
+                    style={{ display: 'grid',
+                    gridTemplateColumns: 'repeat(2, 1fr)', 
+                    gap: '10px' }}>
+                  {question.choices && question.choices.length > 0 ? (
+                    question.choices.map((choice, index) => (
+                      <div
+                        key={index}
+                        className="quizSelect btn"
+                        onClick={() => choiceSelected(question.id, choice.text)}
+                      >
+                        <img
+                        src={choice.imageUrl}
+                        alt={""}
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          borderRadius: "5px"}}>                            
+                        </img>
+                      
+                      </div>
+                    ))
+                  ) : (
+                    <div>No choices</div>
+                  )}
                 </div>
-              ))
-            ) : (
-              <div>No choices</div>
-            )}
+              </div>
+            ))
+          ) : (
+            <div>There are no questions</div>
+          )}
+        </div>
+        <div className="col-6">
+          <div>
           </div>
-        ))
-      ) : (
-        <div>There are no questions</div>
-      )}
+          {mapUrl && (
+            <div className="image">
+              <iframe 
+                src={mapUrl}
+                width="600" 
+                height="450" 
+                style={{ border: 0, 
+                  borderRadius: '10px', 
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' 
+                }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="col-6">
-      <div>
-        {/* {q1answer && q2answer && <div className="result">{renderChoiceMessage(q1answer, q2answer)}</div>} */}
-      </div>
-      {mapUrl && (
-      <div>
-      <iframe 
-        src={mapUrl}
-
-        width="600" 
-        height="450" 
-        style={{border:0}} 
-        allowFullScreen="" 
-        loading="lazy" 
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>  
-      </div>   
-    )}
-      </div>
-
-
-
-      
     </div>
-
-   
-  </div>
-);
+  );
+  
 }
 
 
