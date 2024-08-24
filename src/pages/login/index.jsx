@@ -2,42 +2,19 @@ import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 
-
-
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   
-
-  
-
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-
-
-//to do auth later
-    // const result = await signIn('credentials', {
-    //   redirect: false,
-    //   email,
-    //   password,
-    // });
-
-    // if (result.error) {
-    //   setError(result.error);
-    // } else {
-    //   window.location.href = '/';
-    // }
   };
 
   return (
     <div className='containera'>
-      <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div class="d-grid gap-2 col-12 mx-auto">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -47,7 +24,7 @@ export default function Login() {
             required
           />
         </div>
-        <div>
+        <div class="d-grid gap-2 col-12 mx-auto">
           <label htmlFor="password">Password:</label>
           <input
             type="password"
@@ -57,11 +34,12 @@ export default function Login() {
             required
           />
         </div>
+
         {error && <p>{error}</p>}
-        <Link className="btn btn-primary login" href="/quiz">Login</Link>      
+        <div class="login-btn">
+        <Link className="btn btn-outline btn-sm" href="/quiz">Login</Link> 
+        </div>     
         </form>
-       
-       
     </div>
   );
 }
