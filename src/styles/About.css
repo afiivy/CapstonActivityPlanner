@@ -1,9 +1,16 @@
 h3 {
     font-size: 18;
     color:rgb(187, 152, 37);
+    font-family: 'Indie Flower', cursive;
+    font-size: 100;
 }
 .about{
     margin: 60px;
     text-decoration: none;
     padding: 50px;
 }
+
+p{
+    font-family: 'Indie Flower', cursive;
+}
+

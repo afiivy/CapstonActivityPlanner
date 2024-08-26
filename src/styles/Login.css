@@ -8,13 +8,18 @@
 }
 
 form div {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-.login-btn{
+  .login-btn {
+    padding: 10px;
+    height: 30px !important; /* Change this to auto or a more appropriate height */
+
+    width: 100%;
+    text-align: center;
+    background-color: rgb(108, 79, 166);
+  }
   
-  
-}  
 
 /* .d-grid gap-2 col-12 mx-auto{
   size: 10px;
