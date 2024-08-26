@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 
+
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -36,9 +37,9 @@ export default function Login() {
         </div>
 
         {error && <p>{error}</p>}
-        <div class="login-btn">
-        <Link className="btn btn-outline btn-sm" href="/quiz">Login</Link> 
-        </div>     
+        
+        <Link className="btn btn-outline-primary login-btn" href="/quiz">Login</Link> 
+           
         </form>
     </div>
   );

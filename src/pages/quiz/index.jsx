@@ -8,6 +8,7 @@ export default function Questions() {
 
   const [q1answer, setq1answer] = useState(null);
   const [mapUrl, setmapUrl] = useState('');
+  const[selectID, setSelectID] = useState(null);
 
 
   const questionArray = [
@@ -179,7 +180,7 @@ export default function Questions() {
     <div className={"pageContainer"}>
       <Header />
       <div className={"quizContainer row"}>
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           {questionArray && questionArray.length > 0 ? (
             questionArray.map((question, index) => (
               <div key={index} className={"question"}>
@@ -192,8 +193,11 @@ export default function Questions() {
                     question.choices.map((choice, index) => (
                       <div
                         key={index}
-                        className="quizSelect btn"
-                        onClick={() => choiceSelected(question.id, choice.text)}
+                        className={selectID === `${question.id}${index}`? "quizSelect btn buttonClicked":"quizSelect btn"}
+                        onClick={() => {
+                          setSelectID(`${question.id}${index}`)
+                          choiceSelected(question.id, choice.text)}
+                        }
                       >
                         <img
                         src={choice.imageUrl}
@@ -216,7 +220,7 @@ export default function Questions() {
             <div>There are no questions</div>
           )}
         </div>
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <div>
           </div>
           {mapUrl && (

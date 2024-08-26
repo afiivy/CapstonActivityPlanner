@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Indie_Flower} from '@next/font/google';
 import { useEffect } from "react";
 import '../styles/Footer.css';
 import '../styles/Header.css'
-import '../styles/Body.css';
+// import '../styles/Body.css';
 import '../styles/About.css';
 import '../styles/Contact.css';
 import '../styles/Thingstodo.css';
