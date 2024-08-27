@@ -1,16 +1,63 @@
-h3 {
-    font-size: 18;
-    color:rgb(187, 152, 37);
+.about body {
+    margin: 0;
+    padding: 0;
     font-family: 'Indie Flower', cursive;
-    font-size: 100;
+    
 }
-.about{
-    margin: 60px;
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://github.com/lindseyneff26/Capstone-Photos-Date-Night/blob/main/About%20.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.top, .bottom {
+    flex: 0 1 auto;
+}
+
+.about-content {
+    flex: 1 0 auto;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent background for readability */
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-style: oblique;
+    color: black;
+}
+
+.about p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.about .bottom footer {
+    background-color: rgba(39, 39, 39, 0.7); /* Darken background with transparency */
+    color: white; /* Change text color to white for better contrast */
+    padding: 20px; /* Add some padding to make the footer content more spaced out */
+    border-radius: 10px; /* Optional: add rounded corners */
+    text-align: center; /* Center-align the text */
+}
+
+.about .bottom footer a {
+    color: #00dbf8; /* Change link color to gold or any color that stands out */
     text-decoration: none;
-    padding: 50px;
 }
 
-p{
-    font-family: 'Indie Flower', cursive;
-}
+.about .bottom footer a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 
+}

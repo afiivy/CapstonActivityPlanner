@@ -9,6 +9,8 @@ import '../styles/Contact.css';
 import '../styles/Thingstodo.css';
 import '../styles/Login.css'
 import '../styles/Quiz.css'
+import '../styles/About.css'
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
