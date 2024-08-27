@@ -21,6 +21,8 @@
   
   .navItem {
     margin: 0 1rem;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3vh;
   }
   
   .navItem a {

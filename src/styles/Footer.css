@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    font-family: 'Indie Flower', cursive;
+
   }
 
 .container::before,.container::after{
@@ -15,10 +17,13 @@
 
 .text {
     color: #594471;
+    
   }
 
   .nav-item, .nav-link active {
     color: #594471;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
   }
   .nav-item a:hover {
     color: rgb(74, 74, 178);
