@@ -1,11 +1,11 @@
 .carousel {
   width: 100%;
-  max-width: 800px;
+  max-width: 50rem; 
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 0.625rem; 
   overflow: hidden;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  height: 600px;
+  box-shadow: 0px 0.25rem 0.9375rem rgba(0, 0, 0, 0.1); 
+  height: 37.5rem; 
 }
 
 .carouselInner {
@@ -16,54 +16,53 @@
 .carouselItem {
   position: relative;
   width: 100%;
-  height: 100%; /* Make sure this takes up the full height */
+  height: 100%; 
 }
 
 .image-container {
   position: relative;
   width: 100%;
-  height: 400px; /* Adjust this to your desired height */
+  height: 25rem; 
   overflow: hidden;
 }
 
 .carouselImage {
   object-fit: cover;
   width: 100%;
-  height: 100%; /* Ensure the image covers the container fully */
+  height: 100%; 
   z-index: 1;
 }
 
 .carouselCaption {
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: background to make text more readable */
-  padding: 15px;
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 0.9375rem; 
+  border-radius: 0.3125rem; 
   text-align: left;
-  color: hwb(246 74% 0%); /* Ensure text color is readable */
+  color: hwb(246 74% 0%);
   position: absolute;
-  bottom: 20px; /* Position the caption at the bottom of the carousel */
-  left: 20px; /* Align it slightly from the left */
-  right: 20px; /* Ensure it doesn't stretch too far right */
-  z-index: 2; /* Ensure it sits above the image */
+  bottom: 1.25rem; 
+  left: 1.25rem; 
+  right: 1.25rem; 
+  z-index: 2; 
   font-family: 'Indie Flower', cursive;
-  
 }
 
 .carouselCaption p {
   color: rgb(217, 225, 225);
-  font-size: 20px;
+  font-size: 1.25rem; 
 }
 
 .carouselCaption h5 {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.5625rem; 
 }
+
 .carouselControlPrevIcon,
 .carouselControlNextIcon {
   filter: invert(100%);
-  width: 30px;
-  height: 30px;
+  width: 1.875rem; 
+  height: 1.875rem; 
 }
-
 
 .carouselControlPrev,
 .carouselControlNext {
@@ -71,10 +70,11 @@
   top: 50%;
   transform: translateY(-50%);
   width: 5%;
-  height: 50px;
-  z-index: 2; /* Ensure they are on top of other elements */
-  color: #fff; /* Make sure the color contrasts with the image */
+  height: 3.125rem; 
+  z-index: 2; 
+  color: #fff; 
 }
+
 .carouselControlPrev {
   left: 0;
 }
@@ -85,24 +85,23 @@
 
 .carouselIndicators {
   position: absolute;
-  bottom: 10px; /* Adjust this value as needed */
+  bottom: 0.625rem; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  z-index: 3; /* Ensure they appear above the image */
+  z-index: 3; 
 }
 
 .carouselIndicatorButton {
   background-color: #000;
   border: none;
-  height: 10px;
-  width: 10px;
+  height: 0.625rem; 
+  width: 0.625rem; 
   border-radius: 50%;
-  margin: 0 5px; /* Space between indicators */
+  margin: 0 0.3125rem;  
 }
 
 .carouselIndicatorButton.active {
   background-color: #fff;
 }
-
