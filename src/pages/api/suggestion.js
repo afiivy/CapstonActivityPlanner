@@ -2,10 +2,9 @@ import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        // Extract the suggestion data from the request body
+
         const { name, suggestion } = req.body;
 
-        // Create a transporter using SMTP settings
         const transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
@@ -14,7 +13,6 @@ export default async function handler(req, res) {
             },
         });
 
-        // Set up email options to send the suggestion to your company
         const internalMailOptions = {
             from: process.env.EMAIL_USER, // Your company's email as the sender
             to: process.env.FEEDBACK_EMAIL, // Your company's suggestion email address
@@ -40,7 +38,7 @@ export default async function handler(req, res) {
             console.log('Internal suggestion sent: %s', internalInfo.messageId);
 
             // Respond to the client with a success message
-            res.status(200).json({ message: 'Suggestion sent successfully!' });
+            res.status(200).json({ message: 'Suggestion sent successfully! Thank you for helping our page grow!' });
         } catch (error) {
             console.error('Error sending email:', error);
             res.status(500).json({ message: 'Failed to send suggestion', error });
