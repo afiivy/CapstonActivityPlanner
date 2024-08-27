@@ -1,65 +1,3 @@
-// import React from 'react';
-// import Head from 'next/head';
-// import '../styles/Carousel.css'
-
-// const CarouselPage = () => {
-//   return (
-//     <>
-//       <Head>
-//         {/* Bootstrap CSS */}
-//         <link
-//           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-//           rel="stylesheet"
-//           integrity="sha384-OKq4HXt1j1tuubQHE+k+qpeT2bmF5Q5B6o0Hn5P+u6u7Xl5c0/QsootT+efD3l8z"
-//           crossorigin="anonymous"
-//         />
-//         <title> Things to do </title> {/* Optional title */}
-//       </Head>
-
-//       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-//         <div className="carousel-indicators">
-//           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-//           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-//           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-//         </div>
-//         <div className="carousel-inner">
-//           <div className="carousel-item active">
-//             <img src="Broke-Brewing-Co.jpg" className="d-block w-100" alt="First slide" />
-//             <div className="carousel-caption d-none d-md-block">
-//               <h5>First Slide Heading</h5>
-//               <p>Some representative placeholder content for the first slide.</p>
-//             </div>
-//           </div>
-//           <div className="carousel-item">
-//             <img src="path_to_your_image_2.jpg" className="d-block w-100" alt="Second slide" />
-//             <div className="carousel-caption d-none d-md-block">
-//               <h5>Second Slide Heading</h5>
-//               <p>Some representative placeholder content for the second slide.</p>
-//             </div>
-//           </div>
-//           <div className="carousel-item">
-//             <img src="path_to_your_image_3.jpg" className="d-block w-100" alt="Third slide" />
-//             <div className="carousel-caption d-none d-md-block">
-//               <h5>Third Slide Heading</h5>
-//               <p>Some representative placeholder content for the third slide.</p>
-//             </div>
-//           </div>
-//         </div>
-//         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-//           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-//           <span className="visually-hidden">Previous</span>
-//         </button>
-//         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-//           <span className="carousel-control-next-icon" aria-hidden="true"></span>
-//           <span className="visually-hidden">Next</span>
-//         </button>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default CarouselPage;
-
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -138,7 +76,7 @@ const CarouselPage = () => {
           <div className={`carousel-item active ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/Broke-Brewing-Co.jpg"
+                src="/Broke-Brewing.jpg"
                 fill
                 className={style.carouselImage}
                 alt="First slide"
@@ -155,7 +93,7 @@ Take a behind-the-scenes tour, then relax in the tasting room with vinyl spinnin
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/echocanyonspa.jpg"
+                src="/echo-canyon-spa-resort.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Second slide"
@@ -172,7 +110,7 @@ Indulge in a variety of spa treatments at the on-site Aloha Spa, from relaxing m
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/plaza-fest.jpg"
+                src="/Plaza-District-Festival-at-Night.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Third slide"
@@ -187,7 +125,7 @@ Indulge in a variety of spa treatments at the on-site Aloha Spa, from relaxing m
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/Rusty-nail-wine.jpg"
+                src="/rusty-nail-winery-sign.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Fourth slide"
@@ -202,7 +140,7 @@ Indulge in a variety of spa treatments at the on-site Aloha Spa, from relaxing m
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/skyway-balloons.jpg"
+                src="/skyway-balloon-sunset.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Fifth slide"
@@ -216,7 +154,7 @@ Indulge in a variety of spa treatments at the on-site Aloha Spa, from relaxing m
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/tulsa-cave-house.jpg"
+                src="/c1.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Sixth slide"
@@ -232,7 +170,7 @@ Book a guided tour to explore its winding halls, steep staircase, and eccentric 
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/Wakeboarding.jpeg"
+                src="/Wake-board.jpeg"
                 fill
                 className={style.carouselImage}
                 alt="Seventh slide"
@@ -246,7 +184,7 @@ Book a guided tour to explore its winding halls, steep staircase, and eccentric 
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/glamping.jpg"
+                src="/glamping-orr.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Eighth slide"
@@ -254,7 +192,7 @@ Book a guided tour to explore its winding halls, steep staircase, and eccentric 
             </div>
             <div className={style.carouselCaption}>
               <h5>Glamping at Orr Family Farm</h5>
-              <p>Spend the night in an air-conditioned Conestoga wagon or teepee at Orr Family Farm, complete with luxuries and creature comforts including a complimentary central campfire, s’mores and coffee, access to a swim spa, campfire dinners ($10 per person) and night access to activities on the property.</p>
+              <p>Spend the night in an air-conditioned Conestoga wagon or teepee at Orr Family Farm, complete with luxuries and creature comforts including a complimentary central campfire, s’mores and coffee, access to a swim spa, campfire dinners $10 per person and night access to activities on the property.</p>
             </div>
           </div>
         </div>
