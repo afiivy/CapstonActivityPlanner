@@ -38,15 +38,25 @@
   padding: 15px;
   border-radius: 5px;
   text-align: left;
-  color: #fff; /* Ensure text color is readable */
+  color: hwb(246 74% 0%); /* Ensure text color is readable */
   position: absolute;
   bottom: 20px; /* Position the caption at the bottom of the carousel */
   left: 20px; /* Align it slightly from the left */
   right: 20px; /* Ensure it doesn't stretch too far right */
   z-index: 2; /* Ensure it sits above the image */
+  font-family: 'Indie Flower', cursive;
+  
 }
 
+.carouselCaption p {
+  color: rgb(217, 225, 225);
+  font-size: 20px;
+}
 
+.carouselCaption h5 {
+  font-weight: 500;
+  font-size: 25px;
+}
 .carouselControlPrevIcon,
 .carouselControlNextIcon {
   filter: invert(100%);
@@ -95,3 +105,4 @@
 .carouselIndicatorButton.active {
   background-color: #fff;
 }
+
