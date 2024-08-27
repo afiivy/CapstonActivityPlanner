@@ -1,37 +1,118 @@
 .containera {
-    display: flex;
-    background-color: #cfbde4;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  background-color: #cfbde4;
+  background-image: url('https://github.com/lindseyneff26/Capstone-Photos-Date-Night/blob/main/Navigator.png?raw=true') !important; 
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Adds some padding to avoid content touching the edges */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow effect inside the container */
+  background-attachment: fixed;
+  min-height: 100vh; 
+  width: 100%;
+
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent background to the form */
+  padding: 30px;
+  border-radius: 10px; /* Rounds the corners of the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to lift the form from the background */
 }
 
 form div {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
 
-  .login-btn {
-    padding: 10px;
-    height: 30px !important; /* Change this to auto or a more appropriate height */
+.login-btn {
+  padding: 10px;
+  height: 2rem !important; /* Changed from fixed height to auto for better flexibility */
+  width: 100%;
+  text-align: center;
+  background-color: rgb(108, 79, 166);
+  color: white; /* Ensures the text is visible */
+  border: none; /* Removes any default border */
+  border-radius: 5px; /* Adds a subtle rounding to the button corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect for background color change */
+  display: flex; /* Added for centering */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
 
-    width: 100%;
-    text-align: center;
-    background-color: rgb(108, 79, 166);
-  }
-  
+.login-btn:hover {
+  background-color: rgb(65, 69, 140); /* Darkens the button color on hover */
+}
 
-/* .d-grid gap-2 col-12 mx-auto{
-  size: 10px;
-}  */
-  
-/* .login {
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
-  } */
-/*   
-button:hover {
-    background-color: #7c4f79;
-  } */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-group-text {
+  background-color: #6c4fa6;
+  color: white;
+  border: none;
+  height: 37.6px;
+  width: 2rem;
+  display: flex; /* Added for centering */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+
+.forgot-password {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-flex; /* Added for centering */
+  align-items: center; 
+  justify-content: center; 
+  width: 40px !important; /* Adjusted width */
+}
+
+.btn-google {
+  background-color: #db4437;
+  height: 40px !important; 
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  height: 40px !important; 
+}
+
+.intro {
+  font-size: 5rem;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.access {
+  font-size: 2rem;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added a subtle shadow for better readability */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px; 
+  border-radius: 5px; 
+}
+
 
