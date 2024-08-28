@@ -1,9 +1,60 @@
-h3 {
-    font-size: 18;
-    color:rgb(187, 152, 37);
+.about body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
 }
-.about{
-    margin: 60px;
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://github.com/lindseyneff26/Capstone-Photos-Date-Night/blob/main/About%20.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.top, .bottom {
+    flex: 0 1 auto;
+}
+
+.about-content {
+    flex: 1 0 auto;
+    margin: auto;
+    padding: 2.5rem; 
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 0.625rem; 
+    max-width: 50rem; 
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem; 
+    font-style: oblique;
+    color: black;
+}
+
+.about p {
+    font-size: 1.25rem; 
+    margin-bottom: 0.9375rem; 
+    line-height: 1.6;
+}
+
+.about .bottom footer {
+    background-color: rgba(39, 39, 39, 0.7); 
+    color: white; 
+    padding: 1.25rem; 
+    border-radius: 0.625rem; 
+    text-align: center; 
+}
+
+.about .bottom footer a {
+    color: #00dbf8; 
     text-decoration: none;
-    padding: 50px;
 }
+
+.about .bottom footer a:hover {
+    text-decoration: underline; 
+}
+

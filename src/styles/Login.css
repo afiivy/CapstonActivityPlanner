@@ -1,32 +1,118 @@
 .containera {
-    display: flex;
-    background-color: #cfbde4;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  background-color: #cfbde4;
+  background-image: url('https://github.com/lindseyneff26/Capstone-Photos-Date-Night/blob/main/Navigator.png?raw=true') !important;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1.25rem; 
+  box-shadow: inset 0 0 0.625rem rgba(0, 0, 0, 0.5); 
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.875rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
 }
 
 form div {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 1.25rem; 
+}
 
-.login-btn{
-  
-  
-}  
+.login-btn {
+  padding: 0.625rem; 
+  height: 2rem !important;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(108, 79, 166);
+  color: white;
+  border: none;
+  border-radius: 0.3125rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* .d-grid gap-2 col-12 mx-auto{
-  size: 10px;
-}  */
-  
-/* .login {
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
-  } */
-/*   
-button:hover {
-    background-color: #7c4f79;
-  } */
+.login-btn:hover {
+  background-color: rgb(65, 69, 140);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9375rem; 
+}
+
+.input-group-text {
+  background-color: #6c4fa6;
+  color: white;
+  border: none;
+  height: 2.35rem; 
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forgot-password {
+  margin-top: 0.625rem; 
+  text-align: center;
+}
+
+.social-login {
+  margin-top: 1.25rem; 
+  text-align: center;
+}
+
+.social-login button {
+  margin: 0.3125rem; 
+  padding: 0.625rem; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem !important; 
+}
+
+.btn-google {
+  background-color: #db4437;
+  height: 2.5rem !important; 
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  height: 2.5rem !important; 
+}
+
+.intro {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.625rem; 
+  border-radius: 0.625rem; 
+}
+
+.access {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3125rem; 
+  border-radius: 0.3125rem; 
+}
+
+
 

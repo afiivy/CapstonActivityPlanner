@@ -8,6 +8,7 @@ export default function Questions() {
 
   const [q1answer, setq1answer] = useState(null);
   const [mapUrl, setmapUrl] = useState('');
+  const[selectID, setSelectID] = useState(null);
 
 
   const questionArray = [
@@ -191,8 +192,11 @@ export default function Questions() {
                     question.choices.map((choice, index) => (
                       <div
                         key={index}
-                        className="quizSelect btn"
-                        onClick={() => choiceSelected(question.id, choice.text)}
+                        className={selectID === `${question.id}${index}`? "quizSelect btn buttonClicked":"quizSelect btn"}
+                        onClick={() => {
+                          setSelectID(`${question.id}${index}`)
+                          choiceSelected(question.id, choice.text)}
+                        }
                       >
                         <img
                         src={choice.imageUrl}

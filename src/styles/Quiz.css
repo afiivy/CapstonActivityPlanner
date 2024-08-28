@@ -3,7 +3,7 @@
 }
 
 .quizContainer {
-    padding: 20px;
+    /* padding: 20px; */
 }
 .questionText {
     font-size: 25px;
@@ -27,11 +27,19 @@
     width: 11rem;   
 }
 
+.buttonClicked{
+    border: 5px solid greenyellow;
+}
+
 .btn:hover {
 background-color: rgb(25, 0, 255);
 }
 
-.btn:active {
+/* .btn::after{
+    background-color: rgb(25, 0, 255); 
+} */
+
+.button:active {
     background-color: rgb(153, 108, 196);
 }
 
