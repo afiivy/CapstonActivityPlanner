@@ -40,6 +40,7 @@ export default function Login() {
         <Link className="btn btn-outline btn-sm" href="/quiz">Login</Link> 
         </div>     
         </form>
+        
     </div>
   );
 }
