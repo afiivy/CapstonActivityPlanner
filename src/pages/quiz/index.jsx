@@ -175,12 +175,11 @@ export default function Questions() {
       setmapUrl(newMapUrl);
 
   }
-
   return (
     <div className={"pageContainer"}>
       <Header />
       <div className={"quizContainer row"}>
-        <div className="col-12 col-md-6">
+        <div className="col">
           {questionArray && questionArray.length > 0 ? (
             questionArray.map((question, index) => (
               <div key={index} className={"question"}>
@@ -220,7 +219,7 @@ export default function Questions() {
             <div>There are no questions</div>
           )}
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col">
           <div>
           </div>
           {mapUrl && (
