@@ -154,7 +154,7 @@ Indulge in a variety of spa treatments at the on-site Aloha Spa, from relaxing m
           <div className={`carousel-item ${style.carouselItem}`}>
             <div className={style.imageContainer}>
               <Image
-                src="/c1.jpg"
+                src="/cave.jpg"
                 fill
                 className={style.carouselImage}
                 alt="Sixth slide"
