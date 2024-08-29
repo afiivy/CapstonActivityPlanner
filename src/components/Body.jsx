@@ -47,7 +47,8 @@ export default function Body() {
     return (
         
         <div className="row">
-            <div className="col" style={{paddingTop:'30px', paddingLeft:'30px'}}>
+            <div className="col" 
+            style={{paddingTop:'30px', paddingLeft:'30px'}}>
                 {/* Image on the left */}
                 <div >
                     <Image 
@@ -64,20 +65,22 @@ export default function Body() {
                 <h1 style={{
                     fontSize:"30px", 
                     padding:'30px', 
-                    marginRight:'50px'}}>
+                    marginRight:'50px',fontFamily:'Indie Flower', fontSize:'2.2rem'}}>
                     Welcome to NightOut Navigator 
                     <FontAwesomeIcon 
                             icon={faMoon} className="icon" 
                             style={{color:'black', 
-                                width:'20px'}}
+                                width:'20px', marginLeft:'1rem',
+                                }}
                         />
                     
                 </h1>
-                    <p style={{ display:"flex", marginTop: "25px"}}>
+                    <p style={{ display:"flex", marginTop: "25px", fontFamily:'Indie Flower', fontSize:'1.2rem'}}>
                         Ever found yourself sitting and wondering what to do when hanging out with your partner or friends, only to realize that by the time you’ve decided, the whole day has slipped away, and you’ve spent it scrolling through social media?
                         We have created a tool to help you skip those indecisive moments and dive straight into making core memories with the people who matter most.
                     </p>
-                    <p>
+                    <p style={{
+                        fontFamily:'Indie Flower', fontSize:'1.2rem'}}>
                         Using our tool is easy—just take the quiz, choose your adventure details, and we’ll provide tailored options that fit your needs.
                     </p>
             </div>
