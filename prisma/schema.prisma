@@ -8,9 +8,6 @@ datasource db {
 }
 
 
-generator client {
-  provider = "prisma-client-js"
-}
 
 model User {
   id       Int    @id @default(autoincrement())
@@ -18,11 +15,19 @@ model User {
   password String
 }
 
-model Questions Array {
+model Question {
   id        Int      @id @default(autoincrement())
-  questions  
-  choices    String    
+  question  String
+  choices   Choice[] // Relationship to Choice model
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
+// Define the Choice model
+model Choice {
+  id        Int      @id @default(autoincrement())
+  text      String
+  imageUrl  String
+  question  Question  @relation(fields: [questionId], references: [id])
+  questionId Int
+}
