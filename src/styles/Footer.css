@@ -18,7 +18,7 @@ margin: 0 0.625rem;
   color: #594471;
 }
 
-.nav-item, .nav-link.active {
+.nav-item, .nav-link {
   color: #594471;
   font-family: 'Indie Flower', cursive;
   font-size: 1.5rem;
