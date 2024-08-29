@@ -54,7 +54,7 @@ export default function Login() {
 </div>
         {error && <p>{error}</p>}
         
-        <Link className="btn btn-outline-primary login-btn" href="/quiz">Login</Link> 
+        <Link className="btn btn-outline-primary login-btn" style={{}} href="/quiz">Login</Link> 
 
 
 <div className="social-login">

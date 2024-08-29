@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from '@/components/Header';
 import { useAuth } from "../api/nextauth";
 import Swal from 'sweetalert2'
+import Footer from "@/components/Footer";
 
 export default function Questions() {
 
@@ -239,8 +240,10 @@ export default function Questions() {
             </div>
           )}
         </div>
+        <Footer/>
       </div>
     </div>
+    
   );
   
 }
